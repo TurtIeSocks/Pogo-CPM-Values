@@ -1,0 +1,13 @@
+{
+  "name": "cpm_calc",
+  "version": "1.0.0",
+  "description": "Calculates the CPM for Pokemon GO Half Levels",
+  "main": "cpm_calc.js",
+  "scripts": {
+    "start": "node cpm_calc.js"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "author": "TurtleSocks"}
