@@ -17,7 +17,7 @@ function Fetch_Json(url) {
 
 let getHalfLevels = (MasterArray) => {
     return new Promise(async resolve => {
-        for (let i = 0; i <MasterArray.length; i++) {
+        for (let i = 0; i < MasterArray.length; i++) {
             let object = MasterArray[i];
             try {
                 if (object.data.playerLevel) {
@@ -28,7 +28,7 @@ let getHalfLevels = (MasterArray) => {
                         halfLevels_object[j+1 + '.0'] = levels[j];
                         wholeLevels_array.push(levels[j]);
                         wholeLevels_object[j+1] = levels[j];
-                        if (j < 54) {
+                        if (j < levels.length - 1) {
                             halfLevels_array.push(halfLevelCpm);
                             halfLevels_object[j+1 + '.5'] = halfLevelCpm;
                         }
