@@ -43,7 +43,7 @@ let getHalfLevels = (MasterArray) => {
 }
 
 (async function () {
-    let MasterArray = await Fetch_Json("https://raw.githubusercontent.com/PokeMiners/game_masters/master/level_50_game_master/game_master.json");
+    let MasterArray = await Fetch_Json("https://raw.githubusercontent.com/PokeMiners/game_masters/master/latest/latest.json");
     getHalfLevels(MasterArray);
     Fs.writeJSONSync("./CPM_values/halfLevels_array.json", halfLevels_array, {
         spaces: "\t",
